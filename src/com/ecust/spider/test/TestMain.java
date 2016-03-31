@@ -25,9 +25,11 @@ public class TestMain {
 		}
 
 		ArrayList<String> queue = new ArrayList<String>();
+
+		//单一list爬取测试
 		queue.add("http://list.suning.com/0-20006-0-0-0-9264.html#sourceUrl4Sa=http://www.suning.com/emall/pgv_10052_10051_1_.html");
 		queue.add("http://list.suning.com/0-258003-0-0-0-9264.html#sourceUrl4Sa=http://www.suning.com/emall/pgv_10052_10051_1_.html");
-		Value.addQueue(queue);
+		Value.addQueue(queue);//
 
 		for (int i = 0; i < queue.size(); i++) {
 			new Thread(new SpiderExecuter() {
